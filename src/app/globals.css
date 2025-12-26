@@ -27,8 +27,11 @@
 /* ========================================
    Base Styles
    ======================================== */
+/* iOS Dynamic Island & Safe Area Support */
 html {
   scroll-behavior: smooth;
+  /* Extend theme color into safe area zones */
+  background-color: #011a0f;
 }
 
 body {
@@ -37,10 +40,14 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
   /* iOS Safe Area Support for Dynamic Island */
-  padding-top: env(safe-area-inset-top);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
+  /* Using min() ensures graceful fallback on browsers without safe-area support */
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  /* Ensure content doesn't clip under system UI */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 /* Custom scrollbar */
