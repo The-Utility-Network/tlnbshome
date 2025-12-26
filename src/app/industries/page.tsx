@@ -4,24 +4,24 @@ import Footer from '@/components/Footer';
 import { INDUSTRIES } from '@/data/seo';
 
 export const metadata = {
-    title: 'Industries Transformed | The Utility Company',
-    description: 'See how The Utility Company is revolutionizing Finance, Agriculture, Energy, and Manufacturing with blockchain automation.',
+    title: 'Industries Transformed | The Loch Ness Botanical Society',
+    description: 'See how The Loch Ness Botanical Society is revolutionizing Agriculture, Energy, Manufacturing, and Finance with I3AS botanical automation.',
 };
 
 export default function IndustriesPage() {
     return (
-        <div className="min-h-screen bg-black text-white selection:bg-utility-red selection:text-white">
+        <div className="min-h-screen bg-transparent text-white">
             <Navbar />
 
             <main className="pt-32 pb-24 px-6 max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="section-heading">VERTICAL INTEGRATION</span>
-                    <h1 className="text-5xl md:text-7xl font-bold mt-4 mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-500 pb-2">
+                    <span className="text-emerald-500 font-mono text-xs tracking-[0.4em] uppercase">VERTICAL INTEGRATION</span>
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-black mt-4 mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-emerald-500/30 pb-2 italic">
                         Industries <br /> Reimagined
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-lg sm:text-xl text-emerald-100/40 max-w-2xl mx-auto">
                         We don't just offer software; we offer structural transformation.
-                        Explore how TUC applies neuromimetic business architecture to specific economic sectors.
+                        Explore how TLNBS applies I3AS architecture to specific economic sectors.
                     </p>
                 </div>
 
@@ -30,31 +30,31 @@ export default function IndustriesPage() {
                         <Link
                             key={ind.slug}
                             href={`/industries/${ind.slug}`}
-                            className="group glass-panel p-8 rounded-3xl hover:bg-white/5 transition-all duration-300 border border-white/5 hover:border-utility-red/30 relative overflow-hidden"
+                            className="group p-8 rounded-3xl bg-emerald-950/20 border border-emerald-500/10 hover:border-emerald-500/40 hover:bg-emerald-950/40 transition-all duration-300 relative overflow-hidden"
                         >
                             {/* Decorative Number */}
-                            <span className="absolute top-4 right-8 text-6xl font-black text-white/5 group-hover:text-utility-red/10 transition-colors">
+                            <span className="absolute top-4 right-8 text-6xl font-black text-emerald-500/5 group-hover:text-emerald-500/10 transition-colors">
                                 0{index + 1}
                             </span>
 
-                            <h2 className="text-3xl font-bold mb-4 group-hover:text-utility-red transition-colors relative z-10">{ind.title}</h2>
-                            <p className="text-gray-400 mb-8 relative z-10 h-14">
+                            <h2 className="text-2xl sm:text-3xl font-bold mb-4 group-hover:text-emerald-400 transition-colors relative z-10">{ind.title}</h2>
+                            <p className="text-emerald-100/40 mb-8 relative z-10 h-14 text-sm sm:text-base">
                                 {ind.description}
                             </p>
 
                             <div className="relative z-10">
-                                <span className="text-xs font-mono text-gray-500 uppercase tracking-wider mb-2 block">Powered By:</span>
+                                <span className="text-xs font-mono text-emerald-500/50 uppercase tracking-wider mb-2 block">Powered By:</span>
                                 <div className="flex flex-wrap gap-2">
                                     {ind.subsidiaries.map(sub => (
-                                        <span key={sub} className="px-3 py-1 bg-white/10 rounded-full text-xs text-white">
+                                        <span key={sub} className="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-xs text-emerald-400">
                                             {sub}
                                         </span>
                                     ))}
                                 </div>
                             </div>
 
-                            <div className="mt-8 flex items-center text-utility-red text-sm font-semibold relative z-10">
-                                View Case Study <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                            <div className="mt-8 flex items-center text-emerald-400 text-sm font-semibold relative z-10 font-mono">
+                                VIEW_CASE_STUDY <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                             </div>
                         </Link>
                     ))}

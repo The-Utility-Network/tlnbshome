@@ -51,14 +51,14 @@ export default function WorldMap() {
                             style={{ cursor: 'pointer' }}
                         >
                             <Link href={`/locations/${loc.slug}`}>
-                                <circle r={4} fill="#F54029" className="animate-pulse" />
-                                <circle r={8} fill="transparent" stroke="#F54029" strokeWidth={1} opacity={0.5} />
+                                <circle r={4} fill="#10b981" className="animate-pulse" />
+                                <circle r={8} fill="transparent" stroke="#10b981" strokeWidth={1} opacity={0.5} />
 
                                 {hoveredLocation === loc.slug && (
                                     <foreignObject x={15} y={-40} width={200} height={100}>
-                                        <div className="glass-panel p-2 rounded-lg border border-utility-red/30 bg-black/90 text-xs">
+                                        <div className="p-2 rounded-lg border border-emerald-500/30 bg-black/90 text-xs backdrop-blur-sm">
                                             <div className="font-bold text-white">{loc.city}</div>
-                                            <div className="text-utility-red">{loc.keyFocus}</div>
+                                            <div className="text-emerald-400">{loc.keyFocus}</div>
                                         </div>
                                     </foreignObject>
                                 )}

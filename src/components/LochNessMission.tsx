@@ -8,10 +8,10 @@ export default function LochNessMission() {
                     {/* Mission Focus */}
                     <div className="space-y-8">
                         <div>
-                            <span className="text-emerald-500 font-mono text-xs tracking-widest uppercase">
+                            <span className="text-emerald-500 font-mono text-[10px] sm:text-xs tracking-widest uppercase">
                                 PROVENANCE & POWER
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 leading-tight">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4 leading-tight">
                                 Autonomous <br />
                                 <span className="text-emerald-500 italic">Botanical</span> Systems
                             </h2>

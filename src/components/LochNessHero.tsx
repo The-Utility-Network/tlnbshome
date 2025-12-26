@@ -42,10 +42,10 @@ export default function LochNessHero() {
                 </div>
 
                 {/* System Label */}
-                <div className="inline-flex items-center justify-center gap-3 mb-10 opacity-0 animate-fadeInUp stagger-1 bg-emerald-500/5 px-4 py-1.5 border border-emerald-500/10 rounded-full backdrop-blur-sm self-center">
-                    <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_#34d399]" />
-                    <span className="text-[9px] font-mono tracking-[0.5em] text-emerald-400 uppercase">
-                        BOTANICAL_AUTOMATION_SYSTEM_v4.2
+                <div className="inline-flex items-center justify-center gap-2 sm:gap-3 mb-10 opacity-0 animate-fadeInUp stagger-1 bg-emerald-500/5 px-3 sm:px-4 py-1.5 border border-emerald-500/10 rounded-full backdrop-blur-sm self-center max-w-full">
+                    <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_#34d399] flex-shrink-0" />
+                    <span className="text-[8px] sm:text-[9px] font-mono tracking-[0.2em] sm:tracking-[0.5em] text-emerald-400 uppercase truncate">
+                        BOTANICAL_AUTOMATION_v4.2
                     </span>
                 </div>
 
@@ -58,24 +58,24 @@ export default function LochNessHero() {
                 </h1>
 
                 {/* Mission Statement */}
-                <p className="text-xl md:text-2xl text-cyan-50/40 max-w-4xl mx-auto mb-16 leading-relaxed opacity-0 animate-fadeInUp stagger-3 font-light tracking-tight">
+                <p className="text-lg sm:text-xl md:text-2xl text-cyan-50/40 max-w-4xl mx-auto mb-12 sm:mb-16 leading-relaxed opacity-0 animate-fadeInUp stagger-3 font-light tracking-tight px-2">
                     {botanicalData.mission.subheadline} Elevating independent production through
-                    <span className="text-emerald-400/60 font-mono text-sm ml-2">//_WEB3_PROVENANCE</span>
+                    <span className="text-emerald-400/60 font-mono text-xs sm:text-sm ml-1 sm:ml-2 whitespace-nowrap">//_WEB3_PROVENANCE</span>
                 </p>
 
                 {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-8 opacity-0 animate-fadeInUp stagger-4">
-                    <Link href="#mission" className="group relative px-12 py-5 bg-emerald-500 hover:bg-emerald-400 text-black font-black font-mono text-sm tracking-widest rounded-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] active:scale-95 overflow-hidden">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 opacity-0 animate-fadeInUp stagger-4 w-full px-4">
+                    <Link href="#mission" className="group relative px-8 sm:px-12 py-4 sm:py-5 bg-emerald-500 hover:bg-emerald-400 text-black font-black font-mono text-xs sm:text-sm tracking-wider sm:tracking-widest rounded-sm transition-all shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_40px_rgba(16,185,129,0.6)] active:scale-95 overflow-hidden w-full sm:w-auto text-center">
                         <span className="relative z-10">MINT_GROW_SPOT</span>
                         <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 skew-x-12" />
                     </Link>
-                    <Link href="#collection" className="px-12 py-5 border border-emerald-500/30 hover:border-emerald-500/60 text-emerald-400 font-mono text-xs tracking-[0.3em] rounded-sm transition-all backdrop-blur-xl hover:bg-emerald-500/5">
+                    <Link href="#collection" className="px-8 sm:px-12 py-4 sm:py-5 border border-emerald-500/30 hover:border-emerald-500/60 text-emerald-400 font-mono text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] rounded-sm transition-all backdrop-blur-xl hover:bg-emerald-500/5 w-full sm:w-auto text-center">
                         VIEW_COLLECTION
                     </Link>
                 </div>
 
                 {/* Stats Row */}
-                <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-0 animate-fadeInUp stagger-4">
+                <div className="mt-12 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 opacity-0 animate-fadeInUp stagger-4 px-4">
                     {[
                         { value: '4200', label: 'PWC PLANTS' },
                         { value: 'I3AS', label: 'SERVICE MODEL' },
@@ -83,10 +83,10 @@ export default function LochNessHero() {
                         { value: '∞', label: 'GENETIC CUSTOM' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center group">
-                            <div className="text-3xl md:text-4xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">
+                            <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">
                                 {stat.value}
                             </div>
-                            <div className="text-[10px] font-mono tracking-widest text-emerald-500/40 uppercase">
+                            <div className="text-[9px] sm:text-[10px] font-mono tracking-wider sm:tracking-widest text-emerald-500/40 uppercase">
                                 {stat.label}
                             </div>
                         </div>

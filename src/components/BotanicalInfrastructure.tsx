@@ -19,10 +19,10 @@ export default function BotanicalInfrastructure() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className="text-emerald-500 font-mono text-xs tracking-[0.5em] uppercase">
+                        <span className="text-emerald-500 font-mono text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase">
                             Infrastructure Layer
                         </span>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mt-4 tracking-tighter">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mt-4 tracking-tighter">
                             Industrial <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 italic">Automation</span> Flow
                         </h2>
                         <p className="text-emerald-100/40 max-w-2xl mx-auto mt-6 text-lg font-light leading-relaxed">

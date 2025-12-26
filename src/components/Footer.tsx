@@ -47,7 +47,7 @@ export default function Footer() {
                         </p>
                         <a
                             href="mailto:info@thelochnessbotanicalsociety.com"
-                            className="text-emerald-500 font-mono text-xs hover:underline"
+                            className="text-emerald-500 font-mono text-[10px] sm:text-xs hover:underline break-all"
                         >
                             info@thelochnessbotanicalsociety.com
                         </a>
@@ -119,8 +119,8 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-gray-500 text-xs">
+                <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+                    <p className="text-gray-500 text-[10px] sm:text-xs">
                         © {new Date().getFullYear()} The Utility Company LLC. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">

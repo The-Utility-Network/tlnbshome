@@ -6,10 +6,10 @@ export default function BotanicalFounders() {
         <section id="founders" className="relative py-24 px-6">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
-                    <span className="text-emerald-500 font-mono text-xs tracking-[0.4em] uppercase">
+                    <span className="text-emerald-500 font-mono text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.4em] uppercase">
                         COUNCIL_OF_INNOVATION
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 italic font-black">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4 italic font-black">
                         TLNBS <span className="text-emerald-500">FOUNDERS</span>
                     </h2>
                     <p className="text-emerald-100/40 mt-4 max-w-2xl mx-auto italic font-light">

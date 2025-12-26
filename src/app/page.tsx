@@ -5,6 +5,7 @@ import LochNessHero from '@/components/LochNessHero';
 import LochNessMission from '@/components/LochNessMission';
 import BotanicalInfrastructure from '@/components/BotanicalInfrastructure';
 import PerennialWaters from '@/components/PerennialWaters';
+import ExploreSection from '@/components/ExploreSection';
 import BotanicalFounders from '@/components/BotanicalFounders';
 import Footer from '@/components/Footer';
 
@@ -20,6 +21,7 @@ export default function Home() {
         <LochNessMission />
         <BotanicalInfrastructure />
         <PerennialWaters />
+        <ExploreSection />
         <BotanicalFounders />
       </main>
 
