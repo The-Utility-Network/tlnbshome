@@ -14,7 +14,7 @@ export default function ChapterArtDocs({ chapterNumber, color }: ChapterArtProps
             opacity: 1,
             scale: 1,
             filter: 'blur(0px)',
-            transition: { duration: 1.2, ease: "easeOut" }
+            transition: { duration: 1.2, ease: "easeOut" as const }
         }
     };
 
@@ -150,7 +150,6 @@ export default function ChapterArtDocs({ chapterNumber, color }: ChapterArtProps
                 */}
                 {chapterNumber === 3 && (
                     <g>
-                        <perspective-origin cx="800" cy="450" />
                         {/* Grid Floor */}
                         {[...Array(12)].map((_, i) => (
                             <motion.line
